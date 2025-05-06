@@ -19,7 +19,7 @@ export function listarUsuarios(callbackRender) {
 
 export function editarUsuarios(id, novoNome, novoEmail) {
     const usuarios = obterUsuarios();
-    const usuario = usuarios.find(u => u.id === id); // u de unidade/unitario
+    const usuario = usuarios.find(u => u.id === id); 
 
     if (usuario) {
         usuario.nome = novoNome;
